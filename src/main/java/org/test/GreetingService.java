@@ -1,4 +1,4 @@
-package org.acme;
+package org.test;
 
 
 import jakarta.enterprise.context.ApplicationScoped;
