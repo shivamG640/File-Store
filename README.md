@@ -53,6 +53,28 @@ You can then execute your native executable with: `./target/file-store-1.0.0-SNA
 
 If you want to learn more about building native executables, please consult <https://quarkus.io/guides/maven-tooling>.
 
+## Usage Guides
+
+Make the shell script executable
+
+```shell script
+chmod +x store.sh
+```
+Run the command
+
+```shell script
+./store.sh [command]
+```
+for example
+```shell script
+./store.sh ls                    // To list the file in the server
+./store.sh add file.txt          // To upload the file
+./store.sh rm file.txt           // To delete the file
+./store.sh update file.txt       // To update the file
+./store.sh wc                    // Count the words in all the files
+./store.sh freq-words            // Most frequent words
+```
+
 ## Related Guides
 
 - REST ([guide](https://quarkus.io/guides/rest)): A Jakarta REST implementation utilizing build time processing and Vert.x. This extension is not compatible with the quarkus-resteasy extension, or any of the extensions that depend on it.
